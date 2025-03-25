@@ -35,7 +35,7 @@ public class Passthroughfloor : MonoBehaviour
             Debug.Log("Down Pressed while touching");
         }
     } */
-~`
+
     private void LateUpdate ()
     {
         if (controller.isGrounded && InputSystem.Drop()) 
