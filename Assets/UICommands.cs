@@ -3,17 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class UICommands : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void LevelSelect()
     {
@@ -23,5 +12,20 @@ public class UICommands : MonoBehaviour
     public void BackToMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void Options() 
+    { 
+        SceneManager.LoadScene(3); 
+    }
+
+    public void LoadLevel()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void CloseGame()
+    {
+        Application.Quit();
     }
 }
